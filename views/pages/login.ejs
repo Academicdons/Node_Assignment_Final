@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="login_style.css">
+</head>
+
+<body style="background-color: aquamarine;">
+    <div class="box" style="border-radius: 10px;">
+
+      <i style="font-size: 60px; " class="fa fa-user-circle-o" aria-hidden="true"></i>
+        <div class="page">
+            <div class="header">
+                <a id="login" class="active" href="/login">login</a>
+                <a id="signup" href="/signup">signup</a>
+            </div>
+            <div id="errorMsg"></div>
+            <div class="content">
+                <form class="login" id="userForm" name="loginForm" action="/loginUser" method="POST">
+                    <input style="border-radius: 5px;" type="username" name="username" id="username" placeholder="Username">
+                    <input style="border-radius: 5px;" type="password" name="password" id="password" placeholder="Password">
+                    <div id="check">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <br><br>
+                    <input type="button" id="loginBut" value="Login">
+                    <a href="#">Forgot Password?</a>
+                    <a href="/">Back to Homepage</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="Login.js"></script>
+</body>

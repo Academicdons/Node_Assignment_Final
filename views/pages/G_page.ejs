@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('../partials/head'); %>
+</head>
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+<style>
+  body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: pink;
+  }
+
+  .container {
+    padding: 50px;
+    background-color: lightblue;
+  }
+
+  input[type=text],
+  input[type=password],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: orange;
+    outline: none;
+  }
+
+  div {
+    padding: 10px 0;
+  }
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .registerbtn:hover {
+    opacity: 1;
+  }
+</style>
+
+<body>
+  <form action="/G_pagequery" id="form" method="post" class="form-group">
+    <div class="container">
+      <center>
+        <h1> Get Details Form</h1>
+      </center>
+      <hr>
+      <label> Enter Your UserID </label>
+      <input id="user_id" type="text" name="user_id" placeholder="Your User ID" size="15" required />
+
+      <button class="registerbtn">Check Info</button>
+  </form>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">

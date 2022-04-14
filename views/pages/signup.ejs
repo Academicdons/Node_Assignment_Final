@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="login_style.css">
+</head>
+
+<body style="background-color: aquamarine;">
+    <div class="box" style="border-radius: 10px;">
+
+      <i style="font-size: 60px;" class="fa fa-user-circle-o" aria-hidden="true"></i>
+        <div class="page">
+            <div class="header">
+                <a id="login"  href="/login">login</a>
+                <a id="signup" class="active" href="/signup">signup</a>
+            </div>
+            <div id="errorMsg" class="errorMsg" ></div>
+            <div class="content">
+                <form class="signup" name="signupForm" action="/usersignup" method="POST">
+
+                    <select style="border-radius: 5px;" id="role" class= "role" name="role">
+                      <option value="Driver">Driver</option>
+                      <option value="Examiner">Examiner</option>
+                      <option value="Admin">Admin</option>
+                    </select>
+                    <input style="border-radius: 5px;" type="username" name="username" id="username" placeholder="Username">
+                    <input style="border-radius: 5px;" type="password" name="password" id="password" placeholder="Password">
+                    <input style="border-radius: 5px;" type="password" name="signPasswordTwo" id="signPasswordTwo" placeholder="Retype password"><br>
+                    <input type="button" id="loginBut" value="SignUp">
+                    <a href="/">Back to Homepage</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+</body>
